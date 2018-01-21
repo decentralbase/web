@@ -1,1 +1,1 @@
-New file contents
+New file contentsfunction toISOString() { [native code] }
