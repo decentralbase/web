@@ -11,8 +11,8 @@
     setInterval(function(){
     
     
-  $.getJSON( "test.json", function( json ) {
-  console.log(  new Date().toISOString() + " JSON Data: " + json.number );
+  $.getJSON( "test.json?tm=" + new Date().getTime(), function( json ) {
+  console.log(  new Date().toISOString() + " test.json?tm=" + new Date().getTime() + " JSON Data: " + json.number );
  });
       
        }, 1000);
