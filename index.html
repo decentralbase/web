@@ -7,9 +7,15 @@
   integrity="sha256-RTQy8VOmNlT6b2PIRur37p6JEBZUE7o8wPgMvu18MC4="
   crossorigin="anonymous"></script>
   <script>
+    
+    setTimeout(function(){
+    
+    
   $.getJSON( "test.json", function( json ) {
-  console.log( "JSON Data: " + json );
+  console.log(  new Date().toISOString() + " JSON Data: " + json.number );
  });
+      
+       }, 1000);
  </script>
   </head>
   <body>
