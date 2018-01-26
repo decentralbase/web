@@ -15,7 +15,16 @@
   console.log(  new Date().toISOString() + " test.json?tm=" + new Date().getTime() + " JSON Data: " + json.date );
  });
       
-       }, 1000);
+       }
+                  $.getJSON( "https://raw.githubusercontent.com/decentralbase/web/master/test.json?tm=" + new Date().getTime(), function( json ) {
+  console.log(  new Date().toISOString() + " rawtest.json?tm=" + new Date().getTime() + " JSON Data: " + json.date );
+ });
+      
+       }
+                
+                , 1000);
+    
+    
  </script>
   </head>
   <body>
